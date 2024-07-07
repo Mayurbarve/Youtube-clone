@@ -21,18 +21,18 @@ const Sidebar = () => {
       name: 'Shorts'
     },
     {
-      icon: <MdSubscriptions className='text-xl'/>,
+      icon: <MdSubscriptions className='text-xl' />,
       name: 'Subscription'
     }
   ];
 
   const otherLinks = [
     {
-      icon : <CgProfile className='text-xl'/>,
+      icon: <CgProfile className='text-xl' />,
       name: 'Profile'
     },
     {
-      icon: <LuHistory  className='text-xl'/>,
+      icon: <LuHistory className='text-xl' />,
       name: 'History'
     },
     {
@@ -40,12 +40,12 @@ const Sidebar = () => {
       name: 'Playlist'
     },
     {
-      icon: <MdOutlineWatchLater className='text-xl'/>,
+      icon: <MdOutlineWatchLater className='text-xl' />,
       name: 'Watchlater'
     },
     {
-      icon : <AiFillLike className='text-xl' />,
-      name : 'LikedVideos'
+      icon: <AiFillLike className='text-xl' />,
+      name: 'LikedVideos'
     }
   ]
 
@@ -56,8 +56,8 @@ const Sidebar = () => {
     <div className='w-2/12 bg-[#212121] p-2 pr-5 overflow-auto pd-8 h-screen'>
       <ul className='flex flex-col border-b-2 border-gray-600'>
         {mainLinks.map(
-          ({icon,name}) => {
-            return(
+          ({ icon, name }) => {
+            return (
               <li key={name} className={`pl-6 py-3 rounded-xl hover:bg-zinc-500 ${name === "Home" ? "bg-zinx-600" : " "} `}>
                 <a href='#' className='flex items-center gap-5'>
                   {icon}
@@ -70,8 +70,8 @@ const Sidebar = () => {
       </ul>
       <ul className='flex flex-col border-b-1 border-gray-800'>
         {otherLinks.map(
-          ({icon,name}) => {
-            return(
+          ({ icon, name }) => {
+            return (
               <li key={name} className={`pl-6 py-3 hover:bg-zinc-500 ${name === "Home" ? "bg-slate-600" : " "}`}>
                 <a href='#' className='flex items-center gap-5'>
                   {icon}
